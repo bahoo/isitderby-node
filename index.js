@@ -21,12 +21,12 @@ app.get('/feed', function(request, response){
       description = 'YES, FRIENDS! YES! IT\'S THE DERBY! IT\'S THE GODDAMN KENTUCKY DERBY, GO AND TELL THE NEWS!';
    }
 
-   var rssResponse = '<?xml version="1.0" encoding="ISO-8859-1"?>\n' +
+   var rssResponse = '<?xml version="1.0" encoding="utf-8"?>\n' +
       '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n' +
          '    <channel>\n' +
             '        <title>Is It Derby?</title>\n' +
             '        <link>http://www.isitderby.com/</link>\n' +
-            '        <atom:link href="http://isitderby.com/feed" rel="self" type="application/rss+xml" />\n' +
+            '        <atom:link href="http://www.isitderby.com/feed" rel="self" type="application/rss+xml" />\n' +
             '        <description>Well, is it?</description>\n' +
             '        <language>en-us</language>\n' +
             '        <item>\n' +
@@ -39,6 +39,7 @@ app.get('/feed', function(request, response){
          '    </channel>\n' +
       '</rss>';
 
+   response.set('Content-Type', 'application/rss+xml');
    response.send(rssResponse);
 });
 
