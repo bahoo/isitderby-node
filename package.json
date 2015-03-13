@@ -1,6 +1,6 @@
 {
   "name": "isitderby",
-  "version": "0.1",
+  "version": "0.0.1",
   "description": "A simple Node.js powered Is It Derby",
   "main": "index.js",
   "scripts": {
