@@ -25,7 +25,7 @@ app.get('/feed', function(request, response){
       '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n' +
          '    <channel>\n' +
             '        <title>Is It Derby?</title>\n' +
-            '        <link>http://www.isitderby.com/</link>\n' +
+            '        <link>http://www.isitderby.com/feed</link>\n' +
             '        <atom:link href="http://www.isitderby.com/feed" rel="self" type="application/rss+xml" />\n' +
             '        <description>Well, is it?</description>\n' +
             '        <language>en-us</language>\n' +
