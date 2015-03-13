@@ -33,6 +33,7 @@ app.get('/feed', function(request, response){
             '            <title>Is It Derby?</title>\n' +
             '            <description>' + description + '</description>\n' +
             '            <pubDate>' + midnight.toString() + '</pubDate>\n' +
+            '            <link>http://www.isitderby.com/?' + midnight.getTime() + '</link>\n' +
             '            <guid>http://www.isitderby.com/?' + midnight.getTime() + '</guid>\n' +
          '        </item>\n' +
          '    </channel>\n' +
